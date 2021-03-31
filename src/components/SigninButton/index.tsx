@@ -15,7 +15,7 @@ export function SigninButton() {
     >
       <FaGithub color="#04d361" />
       {session.user.name}
-      <img src={session.user.image} alt="" />
+      
       <FiX color="#737380" className={styles.closeIcon} />
     </button>
   ) : (

@@ -1,4 +1,4 @@
-import { query } from "faunadb";
+import { query as q } from "faunadb";
 
 import NextAuth from "next-auth";
 import Providers from "next-auth/providers";
@@ -13,20 +13,27 @@ export default NextAuth({
       scope: "read:user",
     }),
   ],
-  jwt:{
-    signingKey: process.env.JWT_SIGNING_KEY,
-  },
+
   callbacks: {
     async signIn(user, account, profile) {
       const { email } = user;
 
       try {
         await fauna.query(
-          query.Create(query.Collection("users"), { data: { email } })
+          q.If(
+            q.Not(
+              q.Exists(
+                q.Match(q.Index("user_by_email"), q.Casefold(user.email))
+              )
+            ),
+            q.Create(q.Collection("users"), { data: { email } }),
+            q.Get(q.Match(q.Index("user_by_email"), q.Casefold(user.email)))
+          )
         );
         return true;
-      } catch {
-        return false;
+      } catch(error) {
+
+        return console.log(error), false;
       }
     },
   },
