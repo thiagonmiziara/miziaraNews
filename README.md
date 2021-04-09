@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Ignews" />
+  <img src="./public/ignews.gif" alt="Ignews" />
 
   &#xa0;
 
@@ -9,20 +9,21 @@
 <h1 align="center">Ignews</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/thiagonmiziara/ignews?color=56BEB8">
+  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/thiagonmiziara/gorestaurante?color=56BEB8">
 
-  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/thiagonmiziara/ignews?color=56BEB8">
+  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/thiagonmiziara/gorestaurante?color=56BEB8">
 
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/thiagonmiziara/ignews?color=56BEB8">
+  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/thiagonmiziara/gorestaurante?color=56BEB8">
 
-  <img alt="Licença" src="https://img.shields.io/github/license/thiagonmiziara/ignews?color=56BEB8">
+  <img alt="Licença" src="https://img.shields.io/github/license/thiagonmiziara/gorestaurante?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/thiagonmiziara/ignews?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/thiagonmiziara/gorestaurante?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/thiagonmiziara/ignews?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/thiagonmiziara/gorestaurante?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/thiagonmiziara/ignews?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/thiagonmiziara/gorestaurante?color=56BEB8" /> -->
 </p>
+
 
 <!-- Status -->
 
@@ -45,24 +46,26 @@
 <br>
 
 ## :dart: Sobre ##
-
-Sobre o seu projeto
+Blog Ignews, projeto desenvolvido com Next.js com a JAMStack,utilizamos static site generator(SSG), server side rendering(SSR),
+utilizamos o Prismic como CMS, FaunaDB como banco de dados e o Stripe como API de pagamento.
 
 ## :sparkles: Funcionalidades ##
 
-:heavy_check_mark: Funcionalidade 1;\
-:heavy_check_mark: Funcionalidade 2;\
-:heavy_check_mark: Funcionalidade 3;
+:heavy_check_mark: Cria uma inscrição do usuário 1;\
+:heavy_check_mark: Post vindo do CMS 2;\
+:heavy_check_mark: Pagamento com API do  Stripe 3;
 
 ## :rocket: Tecnologias ##
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
+- [Next.Js](https://Next.Js.io/)
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Prismic](https://www.Prismic.org/)
+- [Stripe](https://www.Stripe.org/)
+- [FaunaDB](https://www.FaunaDB.org/)
 
 ## :white_check_mark: Pré requisitos ##
 
