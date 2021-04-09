@@ -63,6 +63,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://https://sass-lang.com/)
 - [Prismic](https://www.Prismic.org/)
 - [Stripe](https://www.Stripe.org/)
 - [FaunaDB](https://www.FaunaDB.org/)
