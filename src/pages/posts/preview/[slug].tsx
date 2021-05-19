@@ -24,7 +24,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
   const router = useRouter();
 
    useEffect(() => {
-    if (session?.activeSubscription) {
+    if (session?.accessToken) {
       router.push(`/posts/${post.slug}`);
     }
   }, [session]);
