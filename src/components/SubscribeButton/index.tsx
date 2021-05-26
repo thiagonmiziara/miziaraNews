@@ -18,7 +18,7 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
       return;
     }
 
-    if (session.accessToken) {
+    if (session.activeSubscription) {
       router.push('/posts')
 
       return;
@@ -31,9 +31,9 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
 
       const stripe = await getStripeJs();
 
-      await stripe.redirectToCheckout({sessionId: sessionId});
+      await stripe.redirectToCheckout({sessionId});
     } catch (err) {
-      console.log("erro no component SubscribeButton ",err.message)
+      alert(err.message)
     }
   }
 
