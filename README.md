@@ -67,6 +67,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Prismic](https://www.Prismic.org/)
 - [Stripe](https://www.Stripe.org/)
 - [FaunaDB](https://www.FaunaDB.org/)
+- [Jest](https://www.Jest.com)
 
 ## :white_check_mark: Pré requisitos ##
 
