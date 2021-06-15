@@ -19,7 +19,7 @@ describe("ActiveLink component", () => {
       </ActiveLink>
     );
 
-    expect(getByText("Home")).toBeInTheDocument();
+    expect(getByText('Home')).toBeInTheDocument();
   });
 
   it("adds active class if the link as currently active", () => {
@@ -29,6 +29,6 @@ describe("ActiveLink component", () => {
       </ActiveLink>
     );
 
-    expect(getByText("Home")).toHaveClass("active");
+    expect(getByText('Home')).toHaveClass("active");
   });
 });
